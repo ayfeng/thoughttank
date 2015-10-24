@@ -1,0 +1,56 @@
+<ion-view>
+    <ion-content class="login_content">
+        <div class="logo_img_container">
+            <img src="/icon.png" ng-hide="newUser">
+        </div>
+        <div class="login-banner" ng-hide="newUser">Thought Tank</div>
+
+        <div class="create-header" ng-show="newUser">
+          <img src="/circle.png" class="status-img">
+          <p class="info-text">To get started, we need<br />some information from you.</p>
+        </div>
+
+        <div class="list list-inset login-form">
+            <form name="loginForm" ng-submit="login()">
+                <label class="item item-input login-input login-padding">
+                    <i class="ion-person ion-icon-change"></i>
+                    <input type="text" placeholder="Username" ng-model="data.user.username" required="true">
+                </label>
+                <label class="item item-input login-input login-padding">
+                    <i class="ion-locked ion-icon-change"></i>
+                    <input type="password" placeholder="Password" ng-model="data.user.password" required="true">
+                </label>
+                <div class="padding login-input login-padding" ng-hide="newUser">
+                    <button  class="button button-block login-button" type="submit">Log In</button>
+                </div>
+            </form>
+
+            <form name="register-form" ng-submit="createAccount()">
+                <label class="item item-input login-input login-padding" ng-show="newUser">
+                    <i class="ion-locked ion-icon-change"></i>
+                    <input type="password" placeholder="Confirm Password" ng-model="data.user.confirmPassword" required="true" style="color: white;">
+                </label>
+                <label class="item item-input login-input login-padding" ng-show="newUser">
+                    <i class="ion-ios-telephone ion-icon-change"></i>
+                    <input type="text" placeholder="Phone Number" ng-model="data.user.phonenumber" required="true" style="color: white;">
+                </label>
+                <div class="padding login-input login-padding" ng-show="newUser">
+                    <button class="button button-block login-button" type="submit" ui-sref="sms">Next</button>
+                </div>
+            </form>
+
+            <div class="create-padding">
+                <a ng-click="register();" ng-hide="newUser" class="create-account" >Create Account</a>
+            </div>
+            <div class="create-padding">
+                <a ng-click="existing();" ng-show="newUser" class="create-account">I already have an account</a>
+            </div>
+
+            <div class="login-error" ng-if="data.loginFail">
+                <h2>{{data.failMessage}}</h2>
+
+            </div>
+            <a ng-click="logout()">logout</a>
+        </div>
+    </ion-content>
+</ion-view>

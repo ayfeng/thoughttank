@@ -2,3 +2,81 @@
 li{
     color:blue;
 }
+
+/*Login page*/
+.button.button-block.login-button{
+    background-color: white;
+    font-size:18px;
+    border-width:0px;
+}
+.login-form{
+    width:285px;
+    margin-left:auto;
+    margin-right:auto;
+  background-color: #ADD8E6;
+}
+.login-padding{
+    margin-top:15px;
+    margin-bottom:15px;
+}
+.create-account{
+    padding-top:10px;
+    color:white;
+    font-size:16px;
+}
+.login_content{
+  background-color: #ADD8E6;
+}
+.login-form > login-input{
+  background-color: #ADD8E6;
+}
+.login-banner{
+    font-weight:bold;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    color:white;
+    text-align:center;
+    font-size:30px;
+        font-weight:bold;
+}
+.item.item-input.login-input.login-padding{
+background-color: #FFF;
+    border-width: 0;
+  border-radius: 5px !important;
+  height:50px;
+}
+.login-button{
+    color: $secondary;
+        font-weight:bold;
+}
+.logo_img_container{
+  text-align:center;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+.logo_img_container > img {
+  width: 35%;
+}
+.create-padding{
+  padding: 0px;
+  margin: 0px;
+  text-align:center;
+}
+.status-img{
+  width:50%;
+}
+.info-text{
+  color:white;
+  margin-top:30px;
+  margin-bottom:60px;
+  font-weight:bold;
+}
+.create-header{
+  text-align:center;
+  width:100%;
+}
+.ion-icon-change{
+  color:#a4a0a8;
+  padding-right:5px;
+}
+
