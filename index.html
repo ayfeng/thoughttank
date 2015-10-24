@@ -9,10 +9,39 @@
 </head>
 <!--Header-->
 <body ng-app="ionicMeteorSkeleton">
-    <ion-nav-bar class="bar-dark">
-        <ion-nav-back-button class="button-clear">
-            Back
-        </ion-nav-back-button>
-    </ion-nav-bar>
-    <ion-nav-view></ion-nav-view>
+        <ion-side-menus>
+
+            <ion-pane ion-side-menu-content ng-controller="mainController"> <!--controller-here-->
+                <ion-nav-bar class="bar-calm">
+                    <ion-nav-back-button class="button-clear">
+                        Back
+                    </ion-nav-back-button>
+                </ion-nav-bar>
+                    <ion-nav-view></ion-nav-view>
+            </ion-pane>
+
+                <!-- Left menu -->
+                <ion-side-menu side="left"> <!--controller-sidemenu-->
+                    <ion-content>
+
+                        <div id="sidemenu-logo"><img nav-clear menu-close src="/logo.png"></div>
+                        <ion-list>
+                            <ion-item nav-clear menu-close>
+                                My Activity 
+                            </ion-item>
+                            <ion-item nav-clear menu-close>
+                                My Subjects 
+                            </ion-item>
+                            <ion-item nav-clear menu-close>
+                                All Subjects
+                            </ion-item>
+                        </ion-list>
+                    </ion-content>
+                </ion-side-menu>
+        </ion-side-menus>
+
+    
+
+
+    <!--<ion-nav-view></ion-nav-view>-->
 </body>

@@ -21,6 +21,10 @@ angular.module("ionicMeteorSkeleton").config(['$urlRouterProvider', '$stateProvi
          .state('questionform', {
            url:'/questionForm',
            templateUrl: 'client/view/question-form.ng.html'
+         })
+         .state('login', {
+            url: '/login',
+            templateUrl: 'client/views/login.ng.html'
         });
 
         $urlRouterProvider.otherwise('tasks');
