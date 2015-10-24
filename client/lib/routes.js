@@ -5,8 +5,7 @@ angular.module("ionicMeteorSkeleton").config(['$urlRouterProvider', '$stateProvi
         $locationProvider.html5Mode(true);
 
         $stateProvider
-
-        .state('tasks', {
+         .state('tasks', {
             url: '/tasks',
             templateUrl: 'client/views/task-list.ng.html'
         })
@@ -26,6 +25,7 @@ angular.module("ionicMeteorSkeleton").config(['$urlRouterProvider', '$stateProvi
             url: '/login',
             templateUrl: 'client/views/login.ng.html'
         });
+
 
         $urlRouterProvider.otherwise('tasks');
 }]);
