@@ -13,6 +13,14 @@ angular.module("ionicMeteorSkeleton").config(['$urlRouterProvider', '$stateProvi
         .state('taskForm', {
             url: '/taskForm',
             templateUrl: 'client/views/task-form.ng.html'
+        })
+        .state('questions', {
+           url: '/questions',
+           templateUrl: 'client/views/client/question-list.ng.html'
+        })
+         .state('questionform', {
+           url:'/questionForm',
+           templateUrl: 'client/view/question-form.ng.html'
         });
 
         $urlRouterProvider.otherwise('tasks');

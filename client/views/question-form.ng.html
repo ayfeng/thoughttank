@@ -1,15 +1,15 @@
 <ion-view>
-    <ion-content scroll="false" ng-controller="taskController">
-        <form name="taskForm" ng-submit="addTask()">
+    <ion-content scroll="false" ng-controller="questionController">
+        <form name="questionForm" ng-submit="addQuestion()">
             <div class="list">
                 <label class="item item-input">
                     <span class="input-label">Description</span>
-                    <input type="text" ng-model="data.taskText" ng-minlength="3" ng-maxlength="128" required />
+                    <input type="text" ng-model="data.questionText" ng-minlength="3" ng-maxlength="128" required />
                 </label>
 
                 <label class="item item-input">
                     <span class="input-label">Deadline</span>
-                    <input type="date" ng-model="data.taskDeadline" required />
+                    <input type="date" ng-model="data.questionDeadline" required />
                 </label>
 
                 <input type="submit" class="button button-block button-dark" value="Submit">

@@ -1,18 +1,14 @@
-<ion-view view-title="Tasks">
-    <ion-content ng-controller="taskController">
+<ion-view view-title="Subject">
+    <ion-content ng-controller="subjectController">
 
         <div class="list">
-            <div class="item list-group-item" ng-repeat="task in data.tasks">
-                <div class="task-text">
-                    {{task.text}}
-                </div>
-                <div class="task-deadline">
-                    Deadline: {{task.deadline | date:'MM/dd/yyyy'}}
+            <div class="item list-group-item" ng-repeat="subject in data.subject">
+                <div ui-sref="questions" class="myclass">
+                    {{subject}}
                 </div>
             </div>
         </div>
 
-        <button class="button button-full button-dark" ui-sref="taskForm">Add new task <i class="ion-android-add"></i></button>
+        <button class="button button-full button-dark" ui-sref="taskForm">ADD NEW SUBJECT <i class="ion-android-add"></i></button>
     </ion-content>
 </ion-view>
-
