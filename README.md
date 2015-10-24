@@ -1,2 +1,1 @@
-# thoughttank
-Teacher-Student Chatroom made for HackingEDU 2015
+TODO add a read me
